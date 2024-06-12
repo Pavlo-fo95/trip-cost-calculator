@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.calculator {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-group {
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-group label {
+  display: block;
+  width: 150px;
+  margin-bottom: 5px;
+}
+
+.input-wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.input-wrapper input {
+  width: calc(100% - 40px);
+  /* Adjust width to fit the span inside the wrapper */
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-wrapper span {
+  margin-left: 10px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button-group button {
+  background-color: #af4c4c;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.button-group button:hover {
+  background-color: #a44b4b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result {
+  margin-top: 20px;
+}
+
+.result h2 {
+  font-size: 20px;
+  color: #333;
 }
